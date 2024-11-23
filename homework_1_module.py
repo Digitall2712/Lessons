@@ -4,18 +4,14 @@ students = list(students)
 students.sort()
 average_grade = []
 for i in range(len(grades)):
-    print(i, grades[i])
     a = grades[i]
     sum = 0
     for j in range(len(a)):
         b = len(a)
         sum = sum+a[j]
     average = sum / b
-    print(average)
     average_grade.append(average)
 students_grades = {}
 for i in range(len(students)):
     students_grades.update({students[i]: average_grade[i]})
 print(students_grades)
-
-
